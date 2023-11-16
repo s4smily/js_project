@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projectOne</title>
+  </head>
+  <body style="text-align: center; margin: 0; padding: 0; margin-top: 200px">
+    <button
+      style="cursor: pointer"
+      onclick="console.log('Cart Quantity = ' + cartQuant);"
+    >
+      Show Cart
+    </button>
+    <button
+      style="cursor: pointer"
+      onclick="cartQuant++; console.log(`Cart Quantity = ${cartQuant}`);"
+    >
+      Add to Cart
+    </button>
+    <button
+      style="cursor: pointer"
+      onclick="cartQuant+=2; console.log(`Cart Quantity = ${cartQuant}`);"
+    >
+      +2
+    </button>
+    <button
+      style="cursor: pointer"
+      onclick="cartQuant+=3; console.log(`Cart Quantity = ${cartQuant}`);"
+    >
+      +3
+    </button>
+    <button
+      style="cursor: pointer"
+      onclick="cartQuant=0; console.log(`Cart Restored\nCart Quantity = ${cartQuant}`);"
+    >
+      Clean Cart
+    </button>
+
+    <script>
+      cartQuant = 0;
+    </script>
+  </body>
+</html>
